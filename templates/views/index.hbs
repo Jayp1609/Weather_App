@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Weather app</title>
+        <style>
+            .masterdiv{
+               width: 100%;
+               display: flex;
+               justify-content: center;
+               height: 667px;
+               padding-top: 30px;
+            }
+           header{
+               margin-left: 20px;
+               font-size: 45px;              
+               width: 400px;
+               font-family: Nutino,sans-serif;              
+               padding-bottom: 15px;
+               padding: 10px;
+            }
+            .maindiv{
+                width: 400px;
+                background-image: linear-gradient(rgb(144, 207, 248),rgb(230, 242, 247),rgb(126,199,247));
+                box-shadow: 5px 5px 20px 2px rgb(58, 57, 57);
+             }
+            .citylocation{
+                text-align: center;
+            }
+            .citylocation form input{
+                height: 28px;
+                font-size: 14px;
+                
+            }
+            .citylocation form button{
+                position: relative;
+                height: 32px;
+                background-color: black;
+                border: 1px solid black;
+                cursor: pointer;
+                color: white;
+                
+                
+            }
+            .info{
+              height: 200px;
+              padding-top: 190px;
+              
+            }
+            .description{
+               
+               height: 80px;
+               font-size: 30px;
+               color: black;
+               text-align: center;
+               padding-top: 30px;
+               margin-top: -60px;
+               padding-bottom: 60px;
+            }
+            .temperature{
+                
+                height: 80px;
+                width: 100%;
+                font-size: 40px;
+                color: black;
+                padding-top: 30px;
+                text-align: center;
+            }
+            .placename{
+                background-color: black;
+                height: 70px;
+                width: 100%;
+                font-size: 25px;
+                color: white;
+                padding-top: 30px;
+                text-align: center;
+                
+            }
+            .date{
+                background-color: darkblue;
+                height: 70px;
+                width: 100%;
+                font-size: 30px;
+                color: white;
+                padding-top: 30px;
+                text-align: center;
+            }
+
+
+        </style>
+    </head>
+<body>
+<div class="masterdiv">  
+    
+<div class="maindiv">
+    <header>Weather App</header><br><br>
+    <div class="citylocation">
+        <form style="padding-top: 15px;">
+            <input type="text" placeholder="location.." style="width: 70%;"><button>Search</button>
+        </form>
+    </div> 
+    <div class="info">
+            <div class="temperature"></div>
+            <div class="description"></div>
+            <div style="display: flex;">
+                <div class="placename"></div>
+                <div class="date"></div>
+            </div>
+
+    </div>     
+</div> 
+</div>
+ <script src="js/main.js">
+ </script>
+</body>
+</html>
